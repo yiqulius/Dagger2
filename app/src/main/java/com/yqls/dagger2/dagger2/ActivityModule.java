@@ -20,7 +20,6 @@ public class ActivityModule {
         return new Person(context);
     }
 
-
     @PersonForName  // 通过name创建Person 对象
     @Provides
     Person providePersonName(){

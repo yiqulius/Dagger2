@@ -12,7 +12,6 @@ public class Main2Activity extends AppCompatActivity {
     @Inject
     Person person;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +21,8 @@ public class Main2Activity extends AppCompatActivity {
                 .builder()
                 .mainModule(new MainModule(this))
                 .build();
-
         //注入
         component.inject(this);
-
         Log.i("dagger","person = "+ person.toString());
     }
 }
